@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerlinks}}
+</head>
+<body>
+    <!-- navbar -->
+
+    {{>navbar}}
+
+    <!-- main header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto ">
+               
+               <div class="main_content">
+                   <form  class="temp_form">
+                       <input type="text" id="CityName" placeholder="Enter City Name" autocomplete="off">
+                       <input type="submit" value="search" id="SubmitBtn">
+                   </form>
+               </div>
+               <div class="temp_info">
+                   <div class="top_layer">
+                       <div class="row mx-auto">
+                           <p class="col-5" id="day">Monday</p>
+                           <p class=" col-6" id="date"> october 2</p>
+                       </div>
+                       
+                   </div>
+                   <div class="main_layer">
+                       <p id="city_name" class="text-center text-muted">Enter city name</p>
+                       <div class="middle_layer data_hide">
+                           <p class="text-center"><span  id="temp">0</span><sup>o</sup>C</p>
+                           <p id="weather_status" class="text-center"> <i class="fa fa-cloud" aria-hidden="true"></i></p>
+                       </div>
+                   </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    {{>footer}}
+
+
+   {{>bodylinks}}
+   <script src="js/main.js"></script>
+</body>
+</html>
